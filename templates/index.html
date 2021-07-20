@@ -7,9 +7,11 @@
       <div class="event-list">
         <ul>
           {% for event in events %}
-            <li>{{ event.event }} - {{ event.date }}</li>
+            <li>{{ event.event }} - {{ event.date }} ({{event.user}}) [<a href='/remove/{{event._id }}'>x</a>]</li>
           {% endfor %}
         </ul>
-      </div>
+      </div> 
+      <h3><a href="/sortevents">SORT </a>EVENTS</h3> 
+      <h3>Go to <a href="/displayform">FORM</a></h3>       
     </body>
 </html>
